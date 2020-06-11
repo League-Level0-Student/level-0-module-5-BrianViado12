@@ -43,11 +43,18 @@ public class LoopGauntlet {
 			//}
 		//System.out.println();
 		//}
-		for (int i = 1; i < 101; i+=10) {
-			for (int j = i; j < i+10; j++) {
-				System.out.println(j);
-			}
-			
-		}
+		//for (int i = 1; i <= 100; i = i + 10) {
+			//for (int j = i; j <= i+9; j=j +1) {
+				//System.out.print(j + " ");
+			//}
+			//System.out.println();
+		//}
+		//for (int i = 1; i < 7; i++) {
+			//for (int j = 0; j < i; j++) {
+				//System.out.print("*" + " ");
+				
+			//}
+			//System.out.println();
+		//}
 	}	
 }
