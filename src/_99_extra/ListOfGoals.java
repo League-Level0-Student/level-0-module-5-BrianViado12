@@ -8,16 +8,22 @@ public class ListOfGoals {
 	
 	public static void main(String[] args) {
 		//1. Call the appropriate method to make your list of goals
-		
+		createListOfGoals();
 		//2. Call the appropriate method to get your list of goals, 
 		//   so you can use a pop-up to display them
-
+		getListOfGoals();
+		JOptionPane.showMessageDialog(null, getListOfGoals());
 		//3. Call the appropriate method to get the number of goals you entered,
 		//   and using a pop-up display the number of goals
-		
+		getNumberOfGoals();
+		JOptionPane.showMessageDialog(null, +getNumberOfGoals() + " Goals");
 		//4. Call the appropriate method to see if you put a lot of goals,
 		//   if you did put a lot of goals use a pop-up to say "Wow that's a lot of goals! Awesome!"
-	
+		isManyGoals();
+		if(getNumberOfGoals()>2) {
+			JOptionPane.showMessageDialog(null, "Wow that's a lot of goals! Awesome!");
+		}
+		
 	}
 	
 	static void createListOfGoals() {
@@ -43,6 +49,7 @@ public class ListOfGoals {
 	static boolean isManyGoals() {
 		if( getNumberOfGoals() > 2) {
 			return true;
+		
 		}
 		return false;
 	}
